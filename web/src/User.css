@@ -1,0 +1,214 @@
+.user-container {
+    width: 100%;
+    height: 100vh; /* 设置容器高度为视窗的高度 */
+    padding: 20px;
+    overflow-y: auto; /* 当内容超出容器高度时，显示垂直滚动条 */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .concert-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 400%; 
+    margin: 10px auto;
+    background-color: rgb(210, 232, 231); /* 背景设为白色 */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .concert-card h3 {
+    color: rgb(94, 25, 75);
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .concert-card .card-content p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .concert-card .card-image img {
+    height: 100%;
+    max-height: 70px; /* 调整为合适的高度，您可以根据需要调整 */
+    width: auto;
+  }
+  
+  .concert-card h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .concert-card p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .concerts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  /* ... 其他样式 ... */
+
+.concert-column {
+    width: 900px; /* 根据需要调整列的宽度 */
+    height: 750px; /* 根据需要调整列的高度 */
+    overflow-y: auto;
+    border: 1px solid rgb(64, 144, 168);
+    padding: 10px;
+    margin: 20px auto;
+    background-color: rgb(214, 227, 227); /* 背景设为白色 */
+  }
+  
+  .concert-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #787070;
+    padding: 10px 0;
+    height: 120px; 
+  }
+  
+  .concert-row h3 {
+    flex: 1;
+    color: rgb(101, 21, 103);
+    font-size: 18px;
+  }
+  
+  .concert-image img {
+    width: 220px; /* 根据需要调整图片大小 */
+    height: 120px;
+    margin-right: 20px;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  /* ... 其他样式 ... */
+
+.user-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(44, 40, 40);
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    margin: 0 10px;  /* 增加左右间距来分隔购物车图标和其他按钮 */
+}
+.btn-icon {
+    font-size: 20px;         /* 设置图标的大小 */
+    margin-right: 5px;      /* 设置图标和文本之间的间距 */
+    vertical-align: middle; 
+    height: 60px;
+    background-color: bisque;/* 确保图标和文本垂直对齐 */
+}
+/* ... 其他样式 ... */
+
+.pagination-controls {
+    /* 这样会使按钮和页面标签在一行上水平对齐 */
+    display: flex;
+    align-items: center;
+}
+
+.pagination-controls button {
+    background-color: grey;   /* 设置背景为灰色 */
+    padding: 5px 10px;       /* 设置较小的内边距以包裹内容 */
+    border: none;            /* 移除默认的边框 */
+    color: white;            /* 设置文字颜色为白色 */
+    margin: 0 5px;           /* 在两个按钮之间添加一些间距 */
+    cursor: pointer;         /* 当鼠标悬停时，改变鼠标的外观 */
+    transition: 0.3s;  
+    width: 50px;      /* 为背景色添加过渡效果 */
+}
+
+.pagination-controls button:hover {
+    background-color: darkgrey; /* 当鼠标悬停时，稍微深化背景色 */
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* 黑色背景，半透明 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 确保模态框始终在其他内容之上 */
+}
+.modal-content .close-button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;  /* 调整这里的值，使按钮与顶部的距离合适 */
+    right: 0px; /* 调整这里的值，使按钮与右侧的距离合适 */
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 500px; /* 或你喜欢的任何大小 */
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* 添加滚动条 */
+    max-height: 80vh; 
+}
+
+.modal-content button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ... 其他样式 ... */
+
+/* ... 其他样式 ... */
+
+
+  
+  

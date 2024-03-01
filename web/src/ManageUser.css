@@ -1,0 +1,69 @@
+.manage-user-container {
+    width: 95%;  /* 根据需要设置宽度 */
+    max-width: 1200px;  /* 限制容器的最大宽度 */
+    height: 600px;  /* 固定高度 */
+    overflow-y: auto;  /* 当内容超出容器时显示滚动条 */
+    display: flex;
+    flex-direction: column;  /* 使内容（表格）垂直堆叠 */
+    justify-content: center;
+    align-items: center;
+    background-color: white;  /* 背景色设置为白色 */
+    padding: 20px;  /* 根据需要增加内边距 */
+    margin: 0 auto;  /* 使容器在页面上居中 */
+    position: fixed;  /* 位置固定 */
+    top: 50%;  /* 与页面中心对齐 */
+    left: 50%;  /* 与页面中心对齐 */
+    transform: translate(-50%, -50%);  /* 确保容器完全居中 */
+}
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+table {
+    width: 100%;  /* 表格宽度为容器的宽度 */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.edit-button, .delete-button {
+    width: 80px;  /* Set a specific width to make buttons narrower */
+    display: inline-block;  /* Display buttons side by side */
+    margin: 0 5px;  /* Add some margin between buttons */
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.delete-button {
+    background-color: rgb(84, 157, 197);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.delete-button:hover {
+    background-color: darkred;
+}

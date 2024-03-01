@@ -1,0 +1,63 @@
+/* Register.css */
+
+body {
+    font-family: Arial, sans-serif; /* 使用常见的字体作为默认字体 */
+}
+
+.register-container {
+    color: white; /* 设置所有文本颜色为白色 */
+    font-size: 1.2rem; /* 增大字体大小 */
+    width: 80%;
+    max-width: 500px; /* 设置最大宽度为500px以适应移动设备 */
+    margin: 40px auto; /* 将容器垂直和水平居中 */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* 轻微圆角 */
+    background-color: rgba(0, 0, 0, 0.7); /* 轻微透明的背景 */
+}
+
+.register-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px; /* 为标题下方添加间距 */
+}
+
+.form-group {
+    display: flex; /* 使用flex布局确保标签和输入框对齐 */
+    justify-content: space-between;
+    align-items: center; /* 在flex布局中垂直对齐内容 */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-right: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 60%; /* 设置输入框和选择框的宽度 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* 轻微圆角 */
+    background-color: rgba(255, 255, 255, 0.9); /* 轻微透明的背景，使得背景色稍微可见 */
+}
+
+button {
+    display: block; /* 将按钮设置为块级元素 */
+    width: 100%; /* 设置按钮的宽度为100% */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF; /* 设置按钮的背景颜色为蓝色 */
+    color: white; /* 设置按钮的文本颜色为白色 */
+    cursor: pointer; /* 当鼠标悬停在按钮上时，将光标变为手形 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 当鼠标悬停在按钮上时，深化背景颜色 */
+}
+.back-button-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right; 
+}
